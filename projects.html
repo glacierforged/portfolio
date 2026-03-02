@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projects — Your Name</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ========== NAV ========== -->
+  <nav id="navbar">
+    <div class="nav-inner">
+      <a class="nav-logo" href="index.html">Your Name</a>
+      <ul class="nav-links">
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <button class="nav-toggle" aria-label="Toggle menu">&#9776;</button>
+    </div>
+  </nav>
+
+  <!-- ========== PAGE HERO ========== -->
+  <header class="page-hero">
+    <div class="container">
+      <p class="label">My Work</p>
+      <h1>Projects</h1>
+      <p class="page-hero-sub">
+        A collection of things I've built — side projects, client work, and
+        everything in between.
+      </p>
+    </div>
+  </header>
+
+  <!-- ========== PROJECTS GRID ========== -->
+  <main>
+    <section id="projects-list">
+      <div class="container">
+
+        <!-- Filter tabs (cosmetic — wire up with JS if desired) -->
+        <div class="filter-tabs">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="web">Web</button>
+          <button class="filter-btn" data-filter="design">Design</button>
+          <button class="filter-btn" data-filter="other">Other</button>
+        </div>
+
+        <div class="tiles-grid">
+
+          <!-- Tile 1 -->
+          <a href="projects/project-1.html" class="project-tile fade-in" data-category="web">
+            <div class="tile-img">
+              <img src="https://placehold.co/700x420?text=Project+1" alt="Project 1" />
+              <span class="tile-num">01</span>
+            </div>
+            <div class="tile-body">
+              <span class="tile-category">Web Development</span>
+              <h2 class="tile-title">Project Title One</h2>
+              <p class="tile-desc">
+                A short description of what this project does, the problem it
+                solves, and what makes it worth clicking on.
+              </p>
+              <div class="project-tags">
+                <span>HTML</span><span>CSS</span><span>JavaScript</span>
+              </div>
+              <span class="tile-arrow">View Project &rarr;</span>
+            </div>
+          </a>
+
+          <!-- Tile 2 -->
+          <a href="projects/project-2.html" class="project-tile fade-in" data-category="web">
+            <div class="tile-img">
+              <img src="https://placehold.co/700x420?text=Project+2" alt="Project 2" />
+              <span class="tile-num">02</span>
+            </div>
+            <div class="tile-body">
+              <span class="tile-category">Full Stack</span>
+              <h2 class="tile-title">Project Title Two</h2>
+              <p class="tile-desc">
+                A short description of what this project does, the problem it
+                solves, and what makes it worth clicking on.
+              </p>
+              <div class="project-tags">
+                <span>React</span><span>Node.js</span><span>MongoDB</span>
+              </div>
+              <span class="tile-arrow">View Project &rarr;</span>
+            </div>
+          </a>
+
+          <!-- Tile 3 -->
+          <a href="projects/project-3.html" class="project-tile fade-in" data-category="design">
+            <div class="tile-img">
+              <img src="https://placehold.co/700x420?text=Project+3" alt="Project 3" />
+              <span class="tile-num">03</span>
+            </div>
+            <div class="tile-body">
+              <span class="tile-category">Design &amp; Backend</span>
+              <h2 class="tile-title">Project Title Three</h2>
+              <p class="tile-desc">
+                A short description of what this project does, the problem it
+                solves, and what makes it worth clicking on.
+              </p>
+              <div class="project-tags">
+                <span>Python</span><span>Django</span><span>PostgreSQL</span>
+              </div>
+              <span class="tile-arrow">View Project &rarr;</span>
+            </div>
+          </a>
+
+          <!-- Add more tiles by duplicating a block above.
+               Change the href, number, category, title, description, and tags. -->
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ========== FOOTER ========== -->
+  <footer>
+    <p>Designed &amp; built by <strong>Your Name</strong> &copy; <span class="year"></span></p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
