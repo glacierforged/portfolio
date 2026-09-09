@@ -3,132 +3,128 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Ross Wojcik — Mechanical Design Engineer</title>
-  <link rel="stylesheet" href="styles.css" />
+  <title>Ross Wojcik — Get In Touch</title>
+  <style>
+    :root {
+      --color-bg:        #0f0f0f;
+      --color-surface:   #1a1a1a;
+      --color-border:    #2a2a2a;
+      --color-text:      #e8e8e8;
+      --color-muted:     #9a9a9a;
+      --color-accent:    #6366f1;
+      --color-accent-h:  #818cf8;
+      --font-sans: 'Segoe UI', system-ui, -apple-system, sans-serif;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    html, body {
+      height: 100%;
+    }
+
+    body {
+      font-family: var(--font-sans);
+      background-color: var(--color-bg);
+      color: var(--color-text);
+      line-height: 1.6;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 1.5rem;
+    }
+
+    main {
+      max-width: 480px;
+      width: 100%;
+      text-align: center;
+    }
+
+    .badge {
+      display: inline-block;
+      padding: 0.35rem 0.9rem;
+      border: 1px solid var(--color-border);
+      border-radius: 999px;
+      color: var(--color-muted);
+      font-size: 0.8rem;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      margin-bottom: 1.5rem;
+    }
+
+    h1 {
+      font-size: clamp(1.8rem, 5vw, 2.4rem);
+      font-weight: 700;
+      margin-bottom: 0.75rem;
+    }
+
+    p.sub {
+      color: var(--color-muted);
+      font-size: 1.05rem;
+      margin-bottom: 2.5rem;
+    }
+
+    .contact-card {
+      background: var(--color-surface);
+      border: 1px solid var(--color-border);
+      border-radius: 12px;
+      padding: 1.75rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0.9rem;
+    }
+
+    .contact-link {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.6rem;
+      padding: 0.75rem 1rem;
+      border-radius: 8px;
+      border: 1px solid var(--color-border);
+      color: var(--color-text);
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 0.95rem;
+      transition: border-color 0.2s ease, color 0.2s ease, transform 0.2s ease;
+    }
+
+    .contact-link:hover {
+      border-color: var(--color-accent-h);
+      color: var(--color-accent-h);
+      transform: translateY(-1px);
+    }
+
+    .contact-link.primary {
+      background: var(--color-accent);
+      border-color: var(--color-accent);
+      color: #fff;
+    }
+
+    .contact-link.primary:hover {
+      background: var(--color-accent-h);
+      border-color: var(--color-accent-h);
+      color: #fff;
+    }
+
+    footer {
+      margin-top: 2.5rem;
+      color: var(--color-muted);
+      font-size: 0.85rem;
+    }
+  </style>
 </head>
 <body>
+  <main>
+    <span class="badge">Work in Progress</span>
+    <h1>Ross Wojcik</h1>
+    <p class="sub">Work in progress.</p>
 
-  <!-- ========== NAV ========== -->
-  <nav id="navbar">
-    <div class="nav-inner">
-      <a class="nav-logo" href="index.html">Ross Wojcik</a>
-      <ul class="nav-links">
-        <li><a href="projects.html">Projects</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-      <button class="nav-toggle" aria-label="Toggle menu">&#9776;</button>
+    <div class="contact-card">
+      <a class="contact-link primary" href="mailto:ross@glacierforged.com">Email — ross@glacierforged.com</a>
+      <a class="contact-link" href="https://linkedin.com/in/ross-wojcik/" target="_blank" rel="noopener noreferrer">LinkedIn — linkedin.com/in/ross-wojcik</a>
     </div>
-  </nav>
 
-  <!-- ========== HERO ========== -->
-  <section id="hero">
-    <div class="hero-content">
-      <p class="hero-greeting">Hi, I'm</p>
-      <h1 class="hero-name">Ross Wojcik</h1>
-      <p class="hero-tagline">Mechanical Design Engineer crafting precision-engineered solutions in Chicago, IL.</p>
-      <div class="hero-cta">
-        <a href="projects.html" class="btn btn-primary">View My Work</a>
-        <a href="about.html" class="btn btn-outline">About Me</a>
-      </div>
-    </div>
-    <div class="hero-scroll-hint">&#8595; Scroll down</div>
-  </section>
-
-  <!-- ========== FEATURED WORK ========== -->
-  <section id="featured">
-    <div class="container">
-      <div class="section-header">
-        <h2 class="section-title">Featured Work</h2>
-        <a href="projects.html" class="section-link">View all projects &rarr;</a>
-      </div>
-      <div class="projects-grid">
-
-        <article class="project-card fade-in">
-          <a href="projects/project-1.html" class="project-card-link">
-            <div class="project-img">
-              <img src="https://placehold.co/600x340?text=Project+1" alt="Project 1" />
-            </div>
-            <div class="project-info">
-              <h3>Transmission Modification for Hydroelectric Turbine Startup</h3>
-              <p>Redesigned transmission components to improve startup torque and reliability for a hydroelectric turbine system.</p>
-              <div class="project-tags">
-                <span>SolidWorks</span><span>FEA</span><span>GD&amp;T</span>
-              </div>
-            </div>
-          </a>
-        </article>
-
-        <article class="project-card fade-in">
-          <a href="projects/project-2.html" class="project-card-link">
-            <div class="project-img">
-              <img src="https://placehold.co/600x340?text=Project+2" alt="Project 2" />
-            </div>
-            <div class="project-info">
-              <h3>Medical Diagnostic Testing Device for a MedTech Startup</h3>
-              <p>Designed and prototyped a compact diagnostic device enclosure meeting medical-grade tolerances and regulatory requirements.</p>
-              <div class="project-tags">
-                <span>CATIA</span><span>DFM</span><span>ISO 13485</span>
-              </div>
-            </div>
-          </a>
-        </article>
-
-        <article class="project-card fade-in">
-          <a href="projects/project-3.html" class="project-card-link">
-            <div class="project-img">
-              <img src="https://placehold.co/600x340?text=Project+3" alt="Project 3" />
-            </div>
-            <div class="project-info">
-              <h3>Gearbox Design</h3>
-              <p>End-to-end gearbox design including gear ratio selection, shaft layout, bearing specification, and housing design.</p>
-              <div class="project-tags">
-                <span>SolidWorks</span><span>AGMA Standards</span><span>FEA</span>
-              </div>
-            </div>
-          </a>
-        </article>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- ========== ABOUT TEASER ========== -->
-  <section id="about-teaser">
-    <div class="container">
-      <div class="about-teaser-grid fade-in">
-        <div class="about-teaser-photo">
-          <img src="https://placehold.co/400x400?text=Your+Photo" alt="Ross Wojcik" />
-        </div>
-        <div class="about-teaser-text">
-          <p class="label">About me</p>
-          <h2>I engineer mechanical systems.</h2>
-          <p>
-            I'm a Mechanical Design Engineer based in Chicago, IL, passionate about
-            solving complex engineering challenges with clean, purposeful design.
-          </p>
-          <a href="about.html" class="btn btn-outline">More About Me &rarr;</a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ========== CTA BANNER ========== -->
-  <section id="cta-banner">
-    <div class="container">
-      <div class="cta-banner-inner fade-in">
-        <h2>Have a project in mind?</h2>
-        <p>I'm currently available for freelance work and full-time positions.</p>
-        <a href="contact.html" class="btn btn-primary">Let's Talk</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- ========== FOOTER ========== -->
-  <footer>
-    <p>Designed &amp; built by <strong>Ross Wojcik</strong> &copy; <span class="year"></span></p>
-  </footer>
-
-  <script src="script.js"></script>
+    <footer>&copy; 2026 Ross Wojcik</footer>
+  </main>
 </body>
 </html>
